@@ -6,7 +6,7 @@ RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get install -y nodejs
 RUN npm install -g yarn
 RUN npm install -g webpack
-ARG NODE_ENV=production
+ARG NODE_ENV=development
 ENV NODE_ENV $NODE_ENV
 ARG CHOKIDAR_USEPOLLING=1
 ENV CHOKIDAR_USEPOLLING $CHOKIDAR_USEPOLLING
