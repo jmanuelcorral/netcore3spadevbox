@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0-buster AS base
 RUN apt-get update
 RUN apt-get install -y apt-utils
 RUN apt install -y build-essential
